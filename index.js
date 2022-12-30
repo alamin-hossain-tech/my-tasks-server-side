@@ -67,7 +67,6 @@ async function run() {
     app.put("/task/edit/:id", async (req, res) => {
       const id = req.params.id;
       const update = req.body;
-      console.log(update);
       const filter = { _id: ObjectId(id) };
       const option = { upsert: true };
       const updatedreview = {
