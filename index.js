@@ -16,7 +16,6 @@ const client = new MongoClient(uri, {
   useUnifiedTopology: true,
   serverApi: ServerApiVersion.v1,
 });
-console.log(uri);
 
 //mongodb try function start---
 async function run() {
